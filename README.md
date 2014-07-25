@@ -1,4 +1,6 @@
-# Personnal Dotfiles
+# DOTFILES
 
-- Shell: Oh-my-zsh
-- Git
+## Emplacement des fichiers
+
+- .gitconfig > `~/.gitconfig`
+- Fichiers zsh > `~/.oh-my-zsh/custom`
