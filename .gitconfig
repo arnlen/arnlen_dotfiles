@@ -1,0 +1,44 @@
+[user]
+	name = Arnaud Lenglet
+	email = arlenglet@gmail.com
+
+[credential]
+	helper = osxkeychain
+
+[color]
+  ui = auto
+  diff = auto
+
+[alias]
+  st = status
+  ci = commit -v
+  br = branch
+  co = checkout
+  df = diff
+  lg = log -p
+  lol = log --graph --decorate --pretty=oneline --abbrev-commit
+  lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
+  ls = ls-files
+
+[core]
+  # Global exclude file
+  excludesfile = ~/.gitignore_global
+
+  # Tell Git which whitespace problems it should recognize, namely any whitespace at the end of a line, as well as mixed spaces and tabs
+  whitespace = trailing-space,space-before-tab
+
+  # safe rebase on os x 10.7+
+  # see: http://www.git-tower.com/blog/make-git-rebase-safe-on-osx/
+  trustctime = false
+
+[branch]
+  # When branching off a remote branch, automatically let the local branch track the remote branch
+  autosetupmerge = true
+
+[push]
+  # When pushing without giving a refspec, push the current branch to its upstream branch
+  default = tracking 
+
+[rerere]
+  # Enable the recording of resolved conflicts, so that identical hunks can be resolved automatically later on.
+  enabled = true
