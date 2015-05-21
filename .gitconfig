@@ -34,11 +34,15 @@
 [branch]
   # When branching off a remote branch, automatically let the local branch track the remote branch
   autosetupmerge = true
+  autosetuprebase = always
 
 [push]
   # When pushing without giving a refspec, push the current branch to its upstream branch
-  default = tracking 
+  default = tracking
 
 [rerere]
   # Enable the recording of resolved conflicts, so that identical hunks can be resolved automatically later on.
   enabled = true
+
+[pull]
+  rebase = true
